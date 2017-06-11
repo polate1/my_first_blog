@@ -7,6 +7,13 @@
       <h2>na mém blogu</h2>
       <h3>pro všechny milovníky</h3>
       <em>knih</em>
+      <div>{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}</div>
       <p><strong>Knihy<br />žijí</strong></p>
       <div>  <p>Hi there!</p></div>
         <p>It works!</p>
